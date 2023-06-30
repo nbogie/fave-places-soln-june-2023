@@ -5,13 +5,15 @@ import { Place } from "../place";
 console.log({ examplePlaces });
 
 function App() {
-    return (
-        <div className="favePlaces">
-            <PlaceView place={examplePlaces[0]} />
-            <PlaceView place={examplePlaces[1]} />
-            <PlaceView place={examplePlaces[2]} />
-        </div>
-    );
+    const examplePlacesElements: JSX.Element[] = [
+        <PlaceView place={examplePlaces[0]} key={1} />,
+        <PlaceView place={examplePlaces[1]} key={2} />,
+        <PlaceView place={examplePlaces[2]} key={3} />,
+    ];
+
+    console.log("JSX.Element array: ", examplePlacesElements);
+
+    return <div className="favePlaces">{examplePlacesElements}</div>;
 }
 
 export default App;
