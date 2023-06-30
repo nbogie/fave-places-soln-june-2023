@@ -1,3 +1,12 @@
 html {
     background: #f8f8f8;
 }
+
+.favePlaces {
+    border: 1px solid black;
+}
+.place {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin: 1rem;
+}
