@@ -1,19 +1,15 @@
 import "./App.css";
 import { examplePlaces } from "../data/examplePlaces";
+import { Place } from "../place";
 
 console.log({ examplePlaces });
 
 function App() {
     return (
         <div className="favePlaces">
-            <PlaceView
-                title={examplePlaces[0].title}
-                placeName={examplePlaces[0].placeName}
-                country={examplePlaces[0].country}
-                description={examplePlaces[0].description}
-                imageURL={examplePlaces[0].imageURL}
-                mapURL={examplePlaces[0].mapURL}
-            />
+            <PlaceView place={examplePlaces[0]} />
+            <PlaceView place={examplePlaces[1]} />
+            <PlaceView place={examplePlaces[2]} />
         </div>
     );
 }
@@ -21,20 +17,17 @@ function App() {
 export default App;
 
 interface PlaceViewProps {
-    title: string;
-    placeName: string;
-    country: string;
-    description: string;
-    imageURL: string;
-    mapURL: string;
+    place: Place;
 }
 
-function PlaceView(props: PlaceViewProps) {
+function PlaceView(props: PlaceViewProps): JSX.Element {
+    const { title, placeName, description } = props.place;
+
     return (
         <div className="place">
-            <h2>{props.title}</h2>
-            <h3>{props.placeName}</h3>
-            <p>{props.description}</p>
+            <h2>{title}</h2>
+            <h3>{placeName}</h3>
+            <p>{description}</p>
         </div>
     );
 }
