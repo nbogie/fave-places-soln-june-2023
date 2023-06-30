@@ -30,14 +30,13 @@ export const examplePlaces: Place[] = [
         imageURL:
             "https://media-cdn.tripadvisor.com/media/vr-splice-j/00/c5/dd/13.jpg",
         mapURL: "https://goo.gl/maps/jfTejuobgNeWSbq98",
-    }, {
+    },
+    {
         title: "In the clouds",
         placeName: "Green Cloud city ",
         country: "Cloud Country",
-        description:
-            "In the clouds, like i told you",
-        imageURL:
-            "/images/kgolid.png",
+        description: "In the clouds, like i told you",
+        imageURL: "/images/kgolid.png",
         mapURL: "https://goo.gl/maps/jfTejuobgNeWSbq98",
     },
 ];
