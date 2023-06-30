@@ -3,7 +3,7 @@ import App from "./App";
 
 //An example of using react-testing-library
 describe("App component", async () => {
-    test("Should have text Hello, World on it", () => {
+    test("Should have text 'Fave places' on it", () => {
         render(<App />);
         const elem = screen.getByText("Fave places");
         expect(elem).toBeInTheDocument();
