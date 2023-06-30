@@ -1,11 +1,14 @@
 import "./App.css";
+import { Footer } from "./Footer";
+import { Header } from "./Header";
 import { PlacesList } from "./PlacesList";
 
 function App() {
     return (
         <div>
-            <h1>Fave places</h1>
+            <Header />
             <PlacesList />
+            <Footer />
         </div>
     );
 }
