@@ -1,4 +1,7 @@
 import "./App.css";
+import { examplePlaces } from "../data/examplePlaces";
+
+console.log({ examplePlaces });
 
 function App() {
     return (
